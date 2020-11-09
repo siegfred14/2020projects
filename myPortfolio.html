@@ -15,11 +15,15 @@
         body {
             width: 100vw;
             margin: 0;
+            background: white url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/6UHHE19YG7.jpg") no-repeat fixed left;
+            background-size: cover;
         }
 
         nav {
-            background-color: skyblue;
+            background: none;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 1em;
+            border-bottom: 2px solid rgb(82, 12, 196);
             overflow: hidden;
         }
 
@@ -32,16 +36,19 @@
 
         nav ul li a {
             text-decoration: none;
-            color: blue;
+            color: rgb(138, 138, 224);
+            padding: 0.7em;
+
         }
 
         nav ul li a:hover {
             color: rgb(74, 74, 114);
+            border-bottom: 0.2em solid green;
         }
 
         .wrapper {
-            height: inherit;
-            background-color: rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            background-color: rgba(27, 30, 31, 0.452);
 
         }
     </style>
