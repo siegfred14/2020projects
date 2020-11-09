@@ -7,6 +7,11 @@
     , initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
         body {
             width: 100vw;
             margin: 0;
@@ -15,13 +20,23 @@
         nav {
             background-color: skyblue;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin-top: 0;
+            overflow: hidden;
         }
 
         nav ul {
             list-style-type: none;
             display: flex;
             justify-content: space-between;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        nav ul li a:hover {
+            color: rgb(74, 74, 114);
         }
 
         .wrapper {
