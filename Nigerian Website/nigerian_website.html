@@ -5,42 +5,7 @@
     <meta charset="UTF-8">
 
     <title>Federal Republic of Nigeria</title>
-
-    <style>
-        #links {
-            text-align: center;
-        }
-
-        body {
-            background-color: honeydew;
-        }
-
-        h2 {
-            text-align: center;
-            background-color: mediumaquamarine;
-            color: honeydew;
-            padding: 10px;
-        }
-
-        header {
-            text-align: center;
-            background-color: gray;
-            color: honeydew;
-        }
-
-        table {
-            width: 100%;
-
-        }
-
-        th {
-            text-align: center
-        }
-
-        p {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="nigerian_website.css">
 
 </head>
 
@@ -68,8 +33,12 @@
     </p>
 
     <div>
-        <img src="Images/Nigeria Flag.jpg" width="605px" height="350">
-        <img align="right" src="Images/Coat of Arms.jpg" width="605px" height="350">
+        <img class="ourNigeria"
+            src="https://buzznigeria.com/wp-content/uploads/2013/09/nigeria-flag-e1426934654519-1280x720.jpg"
+            width="605px" height="350">
+        <img class="ourNigeria" align="right"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Coat_of_arms_of_Nigeria.svg" width="605px"
+            height="350">
 
         <table>
             <th>Nigerian Flag</th>
@@ -102,9 +71,14 @@
             nostrum aperiam soluta velit iusto, dicta laborum praesentium, fugiat delectus minus maxime? Cupiditate
             totam dicta quae.
         </p>
-        <img src="Images/herbert-macaulay.jpg" width="440" height="320">
-        <img src="Images/enahoro-anthony-653x365.jpg" width="440" height="320">
-        <img src="Images/Obafemi-Awolowo.jpg" width="440" height="320">
+        <img class="freedom_fighters" src="https://businessday.ng/wp-content/uploads/2020/06/Herbert-Macaulay-.jpg"
+            width="440" height="320">
+        <img class="freedom_fighters"
+            src="https://connectnigeria.com/articles/wp-content/uploads/2019/10/6BAF1139-50BF-4153-88CF-AB36097E3240-720x600.jpeg"
+            width="440" height="320">
+        <img class="freedom_fighters"
+            src="https://live.mrf.io/statics/i/ps/i0.wp.com/www.vanguardngr.com/wp-content/uploads/2020/02/Late-Obafemi-Awolowo-1024x890-1.jpg?fit=1024%2C890&ssl=1&width=1200&enable=upscale"
+            width="440" height="320">
 
         <table>
             <tr>
@@ -119,9 +93,14 @@
 
         <hr>
 
-        <img src="Images/Sir-Ahmadu-Bello.jpg" width="440" height="320">
-        <img src="Images/nnamdi-azikiwe.jpg" width="440" height="320">
-        <img src="Images/Funmi-Kuti.jpg" width="440" height="320">
+        <img class="freedom_fighters"
+            src="https://i2.wp.com/www.thehistoryville.com/wp-content/uploads/2019/05/Sir-Ahmadu-Bello.jpg" width="440"
+            height="320">
+        <img class="freedom_fighters"
+            src="data:image/jpeg;base64,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"
+            width="440" height="320">
+        <img class="freedom_fighters" src="https://kentakepage.com/wp-content/uploads/2015/10/funmilayo.jpg" width="440"
+            height="320">
 
         <table>
             <th>Sir. Ahmadu Bello</th>
@@ -139,10 +118,16 @@
         odio incidunt tenetur dicta voluptatem totam minus eveniet provident possimus saepe.</p>
 
     <div>
-        <img src="Images/Mohammadu Buhari.jpg" width="300" height="200">
-        <img src="Images/Goodluck-Jonathan.jpg" width="300" height="200">
-        <img src="Images/Musa-YarAdua.jpg" width="300" height="200">
-        <img src="Images/Olusegun Obasanjo.jpg" width="300" height="200">
+        <img class="political_leaders" src="https://lagosbusinessnews.ng/wp-content/uploads/2019/10/buhari-1.jpeg"
+            width="300" height="200">
+        <img class="political_leaders"
+            src="https://grafrica.com.ng/wp-content/uploads/2020/05/Federal-Universities-Created-By-Goodluck-Ebele-Jonathan%E2%80%99s-Administration-1140x700.jpg"
+            width="300" height="200">
+        <img class="political_leaders"
+            src="https://live.mrf.io/statics/i/ps/i0.wp.com/www.vanguardngr.com/wp-content/uploads/2020/05/Yar%E2%80%99Adua.jpg?fit=800%2C600&ssl=1&width=1200&enable=upscale"
+            width="300" height="200">
+        <img class="political_leaders" src="https://todaynewsafrica.com/wp-content/uploads/2018/01/20180126_072926.png"
+            width="300" height="200">
 
         <table>
             <th>Mohammadu Buhari</th>
@@ -161,10 +146,17 @@
         provident voluptates. Repudiandae error asperiores dolores iste placeat!</p>
 
     <div>
-        <img src="Images/Aliko-Dangote.jpg" width="300" height="200">
-        <img src="Images/a1ac907a-mike-adenuga.jpg" width="300" height="200">
-        <img src="Images/Femi-Otedola.jpg" width="300" height="200">
-        <img src="Images/Jimoh Ibrahim.jpeg" width="300" height="200">
+        <img class="business_leaders" src="https://nairametrics.com/wp-content/uploads/2020/03/Alhaji-Aliko-Dangote.jpg"
+            width="300" height="200">
+        <img class="business_leaders"
+            src="https://live.mrf.io/statics/i/ps/storage.googleapis.com/thisday-846548948316-wp-data/wp-media/2018/09/a1ac907a-mike-adenuga.jpg?width=1200&enable=upscale"
+            width="300" height="200">
+        <img class="business_leaders"
+            src="https://nairametrics.com/wp-content/uploads/2018/07/Femi-Otedola-e1561236000801.jpg" width="300"
+            height="200">
+        <img class="business_leaders"
+            src="https://i2.wp.com/startuptipsdaily.com/wp-content/uploads/2017/06/jimoh-ibrahim-success-story.jpg?resize=550%2C387&ssl=1"
+            width="300" height="200">
 
         <table>
             <th>Aliko Dangote</th>
