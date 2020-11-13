@@ -1,9 +1,27 @@
-#links {
-    text-align: center;
-}
-
 body {
     background-color: honeydew;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
+#links {
+    text-align: center;
+    padding: 0.5em;
+}
+
+#links a{
+    padding: 0.5em;
+    text-decoration: none;
+    color: #02774c;
+    transition: 0.5s;
+}
+
+#links a:hover{
+    background-color: #02774c;
+    border-radius: 0.3em;
+    box-shadow: 0 0 10px black;
+    color: honeydew;
+    transition: 0.5s;
 }
 
 h2 {
@@ -15,8 +33,10 @@ h2 {
 
 header {
     text-align: center;
-    background-color: gray;
+    background: linear-gradient(90deg, #02774c, gray);
     color: honeydew;
+    padding: 10px;
+    margin-top: 0.9em;
 }
 
 table {
@@ -30,4 +50,8 @@ th {
 
 p {
     text-align: center;
+}
+
+footer{
+    line-height: normal;
 }
