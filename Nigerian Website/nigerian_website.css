@@ -1,0 +1,33 @@
+#links {
+    text-align: center;
+}
+
+body {
+    background-color: honeydew;
+}
+
+h2 {
+    text-align: center;
+    background-color: mediumaquamarine;
+    color: honeydew;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: gray;
+    color: honeydew;
+}
+
+table {
+    width: 100%;
+
+}
+
+th {
+    text-align: center
+}
+
+p {
+    text-align: center;
+}
