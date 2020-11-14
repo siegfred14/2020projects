@@ -1,7 +1,15 @@
+@keyframes body_animate{
+    0%{background-color: honeydew;}
+    40%{background-color: rgb(161, 241, 197);}
+}
 body {
     background-color: honeydew;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
+    animation-name: body_animate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 
 #links {
