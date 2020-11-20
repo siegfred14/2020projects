@@ -19,6 +19,8 @@ nav {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid rgb(45,46,48);
+    position: relative;
+    z-index: 1;
 }
 
 nav p{
@@ -50,6 +52,11 @@ nav ul li a:hover {
     transition: 0.4s;
 }
 
+.container{
+    position: relative;
+    top: -55px;
+}
+
 .wrapper {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
@@ -72,6 +79,8 @@ nav ul li a:hover {
 }
 
 .submit{
+    text-decoration: none;
+    color: #551a8b;
     font-family: helvetica;
     font-weight: bolder;
     padding: 0.8em;
