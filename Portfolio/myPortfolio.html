@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
+    <meta name="viewport" content="width=device-width
     , initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="myPortfolio.css">
@@ -34,33 +34,34 @@
     </nav>
 
     <!-- cover -->
-    <div class="container">
-        <div class="wrapper">
-            <div>
-                <h1>Hello, I'm <span>Samson Siegfred</span></h1>
-                <h1>I'm a Front-End Software Developer</h1>
-                <a href="#home" class="submit">View My Portfolio</a>
-            </div>
+    <div class="wrapper">
+        <div>
+            <h1>Hello, I'm <span>Samson Siegfred</span></h1>
+            <h1>I'm a Front-End Software Developer</h1>
+            <br>
+            <a href="#home" class="submit">View My Portfolio</a>
         </div>
     </div>
 
-    <!-- main -->
-    <!-- home -->
-    <div class="section home">
-        <div class="image-circle"></div>
+
+    <!-- HOME -->
+    <div class="section home" id="home">
         <div id="home1">
-            <h1>Samson Siegfred</h1>
-            <p>Software Engineer, Team Lead at Code Clan inc.</p>
-            <p>Project Supervisor and Network Engineer at Gibbs & Cox</p>
+            <article>
+                <h1>Samson Siegfred</h1>
+                <p>Software Engineer, Team Lead at <span id="span1">Code Clan inc</span>.</p>
+                <p>Project Supervisor and Network Engineer at <span id="span2">Gibbs & Cox</span></p>
+                <!-- <p>BSc. Computer Science</p> -->
+            </article>
+            <div class="image-circle"></div>
         </div>
     </div>
 
     <!-- About Me -->
-    <div class="section about_me">
+    <div class="section about_me" id="about">
         <div>
-            <b>
-                <h3>About Me</h3>
-            </b>
+            <h3>About Me</h3>
+            <br>
             <p>Samson Siegfred loves to see the change of behaviour and transformation of events when a line of code
                 is introduced, hence the love for programming. There also exist the love for other activities like
                 public speaking, hiking, swimming and traveling. He is a Software Engineer and Team Lead at Code
@@ -71,30 +72,84 @@
 
 
     <!-- Projects -->
-    <div class="section projects">
+    <div class="projects" id="projects">
+        <h3>Projects</h3>
+        <div>
+            <article>
+                <h4>Tribute Page</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus voluptates voluptatum
+                    eligendi, temporibus quasi cum eos dolor nostrum cumque eius tenetur suscipit quidem aperiam.
+                    Sapiente
+                    enim id incidunt sint?</p>
+            </article>
+            <a href="https://codepen.io/Siegfred/pen/YzqmVpQ">
+                <img src="https://politicsnigeria.com/wp-content/uploads/2020/05/Late-Stella-Adadevoh.jpg" alt="">
+                <p>Tribute Page</p>
+            </a>
+        </div>
 
+        <div>
+            <a href="https://codepen.io/Siegfred/pen/jOrOKQe">
+                <img src="https://www.nuget.org/profiles/dev-team/avatar?imageSize=512" alt="">
+                <p>HTML Sign Up Page</p>
+            </a>
+            <article>
+                <h4>Sign Up Page</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, vel nostrum ex placeat aspernatur
+                    pariatur
+                    molestiae voluptatibus eos recusandae obcaecati a fugit qui modi ea excepturi sapiente veritatis
+                    nisi
+                    atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, dolore.</p>
+            </article>
+        </div>
+
+        <div>
+            <article>
+                <h4>You TubePage</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, vel nostrum ex placeat aspernatur
+                    pariatur
+                    molestiae voluptatibus eos recusandae obcaecati a fugit qui modi ea excepturi sapiente veritatis
+                    nisi
+                    atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aut.</p>
+            </article>
+            <a href="https://codepen.io/Siegfred/pen/wvWKVrR">
+                <img src="https://files.slack.com/files-pri/TF3AEPNDR-F01F2PCMS22/img-20201121-wa0001.jpg" alt="">
+                <p>HTML YouTube Page</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://codepen.io/Siegfred/details/abZBBrB">
+                <img src="https://files.slack.com/files-pri/TF3AEPNDR-F01FZAT6EMN/img-20201121-wa0000.jpg" alt="">
+                <p>HTML Wikipedia Page</p>
+            </a>
+            <article>
+                <h4>Wikipedia Page</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, vel nostrum ex placeat aspernatur
+                    pariatur
+                    molestiae voluptatibus eos recusandae obcaecati a fugit qui modi ea excepturi sapiente veritatis
+                    nisi
+                    atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, natus!</p>
+            </article>
+        </div>
+        <br>
     </div>
 
-
     <!-- Contacts -->
-    <div class="section contacts">
-        <b>
-            <h3>Contacts</h3>
-        </b>
-        <section id="contact" class="contact-section">
-            <div class="contact-links">
-                <a href="https://facebook.com/freecodecamp" target="_blank" class="btn contact-details"><i
-                        class="fab fa-facebook-square"></i> Facebook</a>
-                <a id="profile-link" href="https://github.com/freecodecamp" target="_blank"
-                    class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details"><i
-                        class="fab fa-twitter"></i> Twitter</a>
-                <a href="mailto:example@example.com" class="btn contact-details"><i class="fas fa-at"></i> Send
-                    a mail</a>
-                <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call
-                    me</a>
-            </div>
-        </section>
+    <div class="section contacts" id="contact">
+        <h3>Contacts</h3>
+        <div class="contact-links">
+            <a href="https://facebook.com/siegfreds" target="_blank" class="btn contact-details"><i
+                    class="fab fa-facebook-square"></i> Facebook</a>
+            <a id="profile-link" href="https://github.com/siegfred14" target="_blank" class="btn contact-details"><i
+                    class="fab fa-github"></i> GitHub</a>
+            <a href="https://twitter.com/siegfred_1" target="_blank" class="btn contact-details"><i
+                    class="fab fa-twitter"></i> Twitter</a>
+            <a href="siegfredsamson@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send
+                a mail</a>
+            <a href="tel:+2349080160153" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call
+                me</a>
+        </div>
     </div>
 
 </body>

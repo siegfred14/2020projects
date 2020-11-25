@@ -12,15 +12,118 @@ body {
     font-family: helvetica;
 }
 
+/* KEYFRAMES */
+@keyframes span1{
+    3%{
+        color: #551a8b;
+    }
+    90%{
+        color: rgb(235, 113, 57);
+    }
+}
+
+@keyframes span2{
+    30%{
+        color: rgb(195, 7, 7);
+    }
+    90%{
+        color: rgb(235, 113, 57);
+    }
+}
+
+@keyframes navBar{
+    0%{
+        background-color: rgb(233, 210, 167);
+    }
+    50%{
+        background-color: lightslategray;
+    }
+}
+
+@keyframes navA{
+    0%{
+        color: rgb(236, 155, 117);
+    }
+    50%{
+        color: rgb(168, 22, 22);
+    }
+}
+/* END OF KEYFRAMES */ 
+
+/* MEDIA QUERRIES */
+@media (max-width: 500px){
+    body{
+        font-size: 50%;
+    }
+
+    /* Cover Page */
+    .wrapper div p{
+        padding-bottom: 10px;
+    }
+
+    /* Home and About*/
+
+    #home, #about{
+        font-size: 17px;
+    }
+
+    .image-circle{
+        background: none;
+    }
+
+    /* PROJECTS */
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #projects h3{
+        position: absolute;
+        padding: 0;
+        width: 15%;
+        text-align: center;
+        border-bottom: 0.2em solid #551a8b;
+        text-align: center;
+        text-shadow: 0 0 0.3em #551a8b;
+        
+    }
+
+    .projects div article{
+        display: none;
+    }
+
+    #projects div{
+        margin: 1em;
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+
+    .projects div a img{
+        height: auto;
+        width: 90%;
+        
+    }
+
+    /* END OF PROJECTS */
+        
+}
+/* END OF MEDIA QUERIES */
+
+
+/* NAV BAR */
+
 nav {
     /* background-color: rgb(22, 21, 21); */
     background-color: rgb(233, 210, 167);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: hidden;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid rgb(45,46,48);
-    position: relative;
+    animation: navBar 3s ease-in-out 0s infinite normal;
+    position: fixed;
     z-index: 1;
 }
 
@@ -43,19 +146,15 @@ nav ul li{
 nav ul li a {
     text-decoration: none;
     color: rgb(236, 155, 117);
+    animation: navA 3s ease-in-out 0s infinite normal;
     transition: 0.4s;
 }
 
 nav ul li a:hover {
     color: rgb(235, 113, 57);
-    padding: 0.7em;
-    border-bottom: 0.2em solid green;
+    padding: 0.7rem;
+    border-bottom: 0.2rem solid green;
     transition: 0.4s;
-}
-
-.container{
-    position: relative;
-    top: -55px;
 }
 
 .wrapper {
@@ -76,7 +175,6 @@ nav ul li a:hover {
 
 .wrapper div span{
     color: rgb(236, 155, 117);
-    /* text-shadow: 0 0 2px black; */
 }
 
 .submit{
@@ -84,17 +182,185 @@ nav ul li a:hover {
     color: #551a8b;
     font-family: helvetica;
     font-weight: bolder;
-    padding: 0.8em;
+    padding: 0.8Rem;
     border: none;
-    outline: none;
     background: linear-gradient(120deg, rgb(212, 84, 25), white);
     border-radius: 4px;
+    transition: all 0.4s;
 }
 
 .submit:hover{
     box-shadow: 0 0 5px silver;
 }
 
-#home{
-    background-color: rgb(233, 210, 167);
+/* END OF NAV BAR */
+
+
+/* SECTIONS */
+.section{
+    background: linear-gradient(225deg, rgba(0, 0, 0, 0), rgb(233, 210, 167));
+    margin: 2%;
+    padding: 5% 0 5% 0;
+    /* width: 90%; */
+    border-radius: 0.25rem;
+    font-size: 1.5em;
 }
+
+/* HOME */
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home1{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: space-around;
+    /* display: grid;
+    grid-template-columns: 70% 30%; */
+}
+
+#span1{
+    color: rgb(195, 7, 7);
+    animation: span1 4s linear 0s infinite normal;
+
+}
+
+#span2{
+    color: #551a8b;
+    animation: span2 4s linear 0s infinite normal;
+
+}
+
+.image-circle{
+    height: 10em;
+    width: 10em;
+    margin: 2%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    border: 2px solid white;
+    background: url("https://scontent-los2-1.xx.fbcdn.net/v/t1.0-9/53403606_10216717025351067_1950602609144365056_o.jpg?_nc_cat=110&ccb=2&_nc_sid=8bfeb9&_nc_ohc=160T5afSrtUAX9HYZeW&_nc_ht=scontent-los2-1.xx&oh=d38eeb38bd230c601b87d222f25e496e&oe=5FDFC806") no-repeat scroll center;
+    background-size: contain;
+}
+
+/* ABOUT ME */
+
+.about_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_me div h3{
+    text-shadow: 0 0 0.3em #551a8b;
+}
+.about_me div{
+    width: 70%;
+    text-align: right;
+    border-right: 0.2em solid #551a8b;
+    padding: 1em;
+}
+
+/* END OF ABOUT ME */
+
+
+/* PROJECTS */
+.projects{
+    background: linear-gradient(225deg, rgba(0, 0, 0, 0), rgb(233, 210, 167));
+    margin: 2%;
+    border-radius: 0.25rem;
+    font-size: 1.5em;
+}
+
+.projects h3{
+    position: relative;
+    padding-top: 2em;
+    width: 16em;
+    border-bottom: 0.2em solid #551a8b;
+    text-align: right;
+    text-shadow: 0 0 0.3em #551a8b;
+    left: 50%;
+}
+.projects div{
+    margin: 2em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.projects div p, a{
+    margin: 0.5em;
+}
+
+.projects div a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(195, 7, 7);
+    transition: all 0.4s;
+}
+
+.projects div a:hover img{
+    transform: scale(1.03, 1.03);
+    transition: 0.4s;
+}
+
+.projects div img{
+    height: 7em;
+    width: 8em;
+    border-radius:0.3em 0.3em 0 0;
+    transition: 0.4s;
+}
+
+.projects div:nth-child(even){
+    text-align: right;
+    margin-left: 15%;
+    background-color: rgb(53, 233, 53);
+    box-shadow: 0 0 3px black;
+    border-radius: 0.35em;
+}
+
+.projects div:nth-child(odd){
+    text-align: left;
+    background-color: rgb(11, 165, 11);
+    box-shadow: 0 0 3px black;
+    border-radius: 0.35em;
+}
+/* END OF PROJECTS */
+
+
+/* CONTACTS */
+
+#contact h3{
+    position: relative;
+    padding-top: 2em;
+    width: 30%;
+    border-bottom: 0.2em solid #551a8b;
+    text-align: right;
+    text-shadow: 0 0 0.3em #551a8b;
+    left: 50%;
+}
+
+.contact-links{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.contact-links a{
+    padding: 1em;
+    width: 60%;
+    margin-left: 20%;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(45deg, black, rgb(11, 165, 11));
+    border-radius: 2.2em;
+    transition: 0.5s;
+}
+
+.contact-links a:hover{
+    transform: scale(1.04, 1.04);
+    transition: 0.5s;
+}
+
+/* END OF CONTACTS */
