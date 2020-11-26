@@ -296,6 +296,8 @@ nav ul li a:hover {
     margin: 2em;
     width: 80%;
     display: flex;
+    box-shadow: 0 0 0.66em black;
+    border-radius: 0.35em;
     align-items: center;
 }
 
@@ -326,16 +328,13 @@ nav ul li a:hover {
 .projects div:nth-child(even){
     text-align: right;
     margin-left: 15%;
-    background-color: rgb(53, 233, 53);
-    box-shadow: 0 0 3px black;
-    border-radius: 0.35em;
+    background: radial-gradient(rgb(53, 233, 53), rgb(73, 110, 73)) ;
+    
 }
 
 .projects div:nth-child(odd){
     text-align: left;
-    background-color: rgb(11, 165, 11);
-    box-shadow: 0 0 3px black;
-    border-radius: 0.35em;
+    background: radial-gradient(rgb(73, 110, 73), rgb(53, 233, 53));
 }
 /* END OF PROJECTS */
 
@@ -373,8 +372,8 @@ nav ul li a:hover {
     transform: scale(1.04, 1.04);
     transition: 0.5s;
 }
-
 /* END OF CONTACTS */
+
 
 /* FOOTER */
 #footer{
@@ -399,7 +398,7 @@ nav ul li a:hover {
 }
 
 #footer-links ul li:hover a{
-    text-decoration: none;
     color: purple;
     transition: 0.4s;
 }
+/* END OF FOOTER */
