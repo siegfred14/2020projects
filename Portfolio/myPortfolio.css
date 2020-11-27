@@ -79,12 +79,13 @@ body {
     }
 
     #projects h3{
-        padding-top: 6%;
-        width: 30%;
+        /* width: 30%;
         text-align: right;
         border-bottom: 0.2em solid #551a8b;
-        text-shadow: 0 0 0.3em #551a8b;
+        text-shadow: 0 0 0.3em #551a8b; */
+        margin-bottom: 3%;
         left: 15%;
+
     }
 
     #projects div{
@@ -343,7 +344,8 @@ nav ul li a:hover {
 
 #contact h3{
     position: relative;
-    padding-top: 6%;
+    padding-top: 3%;
+    margin-bottom: 3%;
     width: 30%;
     border-bottom: 0.2em solid #551a8b;
     text-align: right;
