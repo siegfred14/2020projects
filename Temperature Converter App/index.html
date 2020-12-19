@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/all.css">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../Bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../Bootstrap/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter App</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-warning">
+        <a href="#" class="navbar-brand">Temperature Converter App</a>
+    </nav>
+
+    <!-- Temperature Converter App -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Temperature Converter App</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="inputs">
+
+                            <!-- data collection -->
+
+                            <input id="temperature" type="number" placeholder="Enter Temperature">
+                            <h4 id="degree-type"></h4>
+                            <select name="temp" id="select">
+                                <option value="">Choose Temperature</option>
+                                <option value="&deg;C">Celcius</option>
+                                <option value="&deg;F">Farenheit</option>
+                            </select>
+                        </div>
+
+                        <!-- Conversion Area -->
+
+                        <div class="result mt-3">
+                            <h2>Converted Temperature <span id="req-degree">-</span></h2>
+                            <h1 class="converted"><span id="converted" class="converted">00</span>&deg<span
+                                    id="temp-sign"></span></h1>
+                        </div>
+                        <input class="btn-convert" id="convert" type="button" value="CONVERT">
+
+                    </div>
+                    <div class="card-footer">
+                        <p>Designed And Developed by theSiegfred</p>
+                        <small>All Rights Reserved Copyright &COPY;2020</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS files -->
+    <script src="../Bootstrap/js/jquery.js"></script>
+    <script src="../Bootstrap/js/popper.js"></script>
+    <script src="../Bootstrap/js/bootstrap.js"></script>
+    <script src="../Bootstrap/js/mdb.js"></script>
+
+    <!-- Local JS file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
