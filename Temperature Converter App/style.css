@@ -5,7 +5,7 @@
 .navbar-brand {
   text-shadow: 0 0 0.625rem rgb(39, 137, 170);
   text-align: center;
-  margin-left: 10%;
+  width: 100%;
 }
 
 .card {
@@ -18,8 +18,20 @@
   background-size: cover;
 }
 
-.inputs {
-  display: inline-flex;
+@media (min-width: 991px) {
+  .inputs {
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .row {
+    grid-column: 2/5;
+  }
 }
 
 #temperature,
