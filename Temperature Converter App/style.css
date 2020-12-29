@@ -1,67 +1,71 @@
-.navbar{
-    background: linear-gradient(25deg, red, rgb(39, 137, 170));
-    border-bottom: 0.25rem solid rgb(39, 137, 170);
-
+.navbar {
+  background: linear-gradient(25deg, rgb(182, 68, 68), rgb(39, 137, 170));
+  border-bottom: 0.25rem solid rgb(39, 137, 170);
 }
-.navbar-brand{
-    text-shadow: 0 0 0.625rem rgb(39, 137, 170);
-}
-
-.card{
-    font-family: Arial, Helvetica, sans-serif;
+.navbar-brand {
+  text-shadow: 0 0 0.625rem rgb(39, 137, 170);
+  text-align: center;
+  margin-left: 10%;
 }
 
-.card-body{
-    background: blue url("https://i.ytimg.com/vi/pamj-g7mWaU/maxresdefault.jpg") no-repeat;
-    background-size: cover;
+.card {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.inputs{
-    display: inline-flex;
-        
+.card-body {
+  background: blue url("https://i.ytimg.com/vi/pamj-g7mWaU/maxresdefault.jpg")
+    no-repeat;
+  background-size: cover;
 }
 
-#temperature, #select{
-    outline: none;
-    border: none;
-    border-radius: 0.1875rem;
+.inputs {
+  display: inline-flex;
 }
 
-#temperature:focus, #select:focus{
-    box-shadow: 0 0 1rem rgb(47, 119, 212);
+#temperature,
+#select {
+  outline: none;
+  border: none;
+  border-radius: 0.1875rem;
 }
 
-#degree-type{
-    margin-left: 0.3125rem;
+#temperature:focus,
+#select:focus {
+  box-shadow: 0 0 1rem rgb(47, 119, 212);
 }
 
-#select{
-    margin-left: 1.875rem;
+#degree-type {
+  margin-left: 0.3125rem;
 }
 
-.result h2, #req-degree{
-    color: white;
-    text-shadow: 0 0 0.625rem black;
+#select {
+  margin-left: 1.875rem;
 }
 
-.converted{
-    font-size: 3.75rem;
-    color: lightsalmon;
-    text-shadow: 0 0 0.625rem black;
+.result h2,
+#req-degree {
+  color: white;
+  text-shadow: 0 0 0.625rem black;
 }
 
-#convert{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border: none;
-    outline: none;
-    background: linear-gradient(45deg, steelblue, orangered);
-    border-radius: 0.1875rem;
-    box-shadow: 0 0 0.625rem black;
-    font-family: sans-serif;
+.converted {
+  font-size: 3.75rem;
+  color: lightsalmon;
+  text-shadow: 0 0 0.625rem black;
 }
 
-.card-footer{
-    text-align: center;
-    background: linear-gradient(30deg, rgb(190, 197, 204), rgb(132, 233, 233));
+#convert {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(45deg, steelblue, orangered);
+  border-radius: 0.1875rem;
+  box-shadow: 0 0 0.625rem black;
+  font-family: sans-serif;
+}
+
+.card-footer {
+  background: linear-gradient(30deg, rgb(190, 197, 204), rgb(132, 233, 233));
+  text-align: center;
 }
